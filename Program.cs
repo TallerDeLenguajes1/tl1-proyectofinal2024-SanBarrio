@@ -31,11 +31,10 @@ internal class Program
                     ObtenerPersonaje.Players Jugador = ObtenerPersonaje.SeleccionarPersonaje();
                     int batallas = 0;
                     int perdedor = 1;
-                    while(batallas < 5 || perdedor !=0){
+                   
                     Mostrar.SeleccionPuerta();
                     EleccionPuerta.EscogerProbabilidad(Jugador);
                     batallas++;
-                    }
                     if(perdedor == 1){
                     //batalla final
 

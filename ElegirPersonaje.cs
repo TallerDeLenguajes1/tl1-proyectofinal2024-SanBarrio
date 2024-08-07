@@ -77,6 +77,8 @@ public class ObtenerPersonaje
         public string clase { get; set; }
         [JsonPropertyName("Vida")]
         public int vida { get; set; }
+        [JsonPropertyName("VidaMax")]
+        public int vidaMax { get; set; }
         [JsonPropertyName("Fuerza")]
         public int fuerza { get; set; }
         [JsonPropertyName("Defensa")]

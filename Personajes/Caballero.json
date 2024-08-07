@@ -4,6 +4,7 @@
     "Raza": "Humano",
     "Edad": "32 años",
     "Clase": "Caballero",
+    "VidaMax": 250,
     "Vida": 250,
     "Fuerza": 10,
     "Defensa":10

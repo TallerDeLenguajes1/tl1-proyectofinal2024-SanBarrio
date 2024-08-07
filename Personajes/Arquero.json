@@ -4,6 +4,7 @@
     "Raza": "Elfo",
     "Edad": "80 años",
     "Clase": "Arquero",
+    "VidaMax": 180,
     "Vida": 180,
     "Fuerza": 15,
     "Defensa":5
