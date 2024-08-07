@@ -81,4 +81,22 @@ public static class Mostrar
 
     }
 
+    public static void Perdedor(){
+        Console.Clear();
+        Mostrar.WriteAt("█      █████  █████  █████ █████", 20, 12, ConsoleColor.Red);
+        Mostrar.WriteAt("█      █   █  █      █     █   █", 20, 13, ConsoleColor.Red);
+        Mostrar.WriteAt("█      █   █  █████  ████  ████  ", 20, 14, ConsoleColor.Red);
+        Mostrar.WriteAt("█      █   █      █  █     █   █", 20, 15, ConsoleColor.Red);
+        Mostrar.WriteAt("█████  █████  █████  █████ █   █", 20, 16, ConsoleColor.Red);
+    }
+
+    public static void Ganador(){
+        Console.Clear();
+        Mostrar.WriteAt("█████  █████  █   █  █████  █████  █████  █████", 20, 12, ConsoleColor.Green);
+        Mostrar.WriteAt("█      █   █  ██  █  █   █  █        █    █", 20, 13, ConsoleColor.Green);
+        Mostrar.WriteAt("█ ███  █████  █████  █████  █████    █    ████", 20, 14, ConsoleColor.Green);
+        Mostrar.WriteAt("█   █  █   █  █  ██  █   █      █    █    █", 20, 15, ConsoleColor.Green);
+        Mostrar.WriteAt("█████  █   █  █   █  █   █  █████    █    █████", 20, 16, ConsoleColor.Green);
+    }
+
 }
