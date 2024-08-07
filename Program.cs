@@ -28,8 +28,8 @@ internal class Program
             switch (i)
             {
                 case 1:
-                     ObtenerPersonaje.Players Jugador = ObtenerPersonaje.SeleccionarPersonaje();
-                    Console.WriteLine(Jugador.descripcion);
+                    ObtenerPersonaje.Players Jugador = ObtenerPersonaje.SeleccionarPersonaje();
+                    Mostrar.SeleccionPuerta();
                      Console.ReadLine();
                     break;
                 case 2:
