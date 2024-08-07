@@ -3,8 +3,8 @@
     "Descripcion": "Sir Patrick de Ravenshire es un imponente caballero de 32 años, conocido por su honor y lealtad. Con su armadura plateada y capa azul con el emblema de un cuervo, Patrick se destaca en el combate con su espada larga y su habilidad como estratega. Nacido en una noble familia y marcado por la cicatriz de una batalla, se ha forjado una reputación formidable. Tras la trágica muerte de su hermano mayor, Patrick decidio dejar su vida como caballer y adentrarse al mundo de los aventureros",
     "Raza": "Humano",
     "Edad": "32 años",
+    "Clase": "Caballero",
     "Vida": 250,
     "Fuerza": 10,
-    "Defensa":10,
-    "Clase": "Caballero"
+    "Defensa":10
 }

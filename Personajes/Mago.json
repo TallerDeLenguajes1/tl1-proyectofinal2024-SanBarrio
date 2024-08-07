@@ -3,8 +3,8 @@
     "Descripcion": "Nahfaim (Gran Barba) nació en las montañas de Karaz Ankor, donde la minería y la herrería son el orgullo del clan. A diferencia de sus compañeros, Nahfaim se sintió atraído por la magia desde joven, dedicándose en secreto a estudiar antiguos tomos mágicos. A pesar del escepticismo de su gente, Nahfaim persiguió su pasión, encontrando un mentor en un anciano sabio. A la edad de 132 años, dejó su clan y se convirtio en un aventurero",
     "Raza": "Enano",
     "Edad": "132 años",
+    "Clase": "Mago",
     "Vida": 210,
     "Fuerza": 13,
-    "Defensa":6,
-    "Clase": "Mago"
+    "Defensa":6
 }

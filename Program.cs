@@ -1,27 +1,18 @@
-﻿//Alumno: Barrionuevo Santiago Horacio - Ing. En Informática
+﻿
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using System.Dynamic;
+using System.Net;
 using System.Text;
-using System.IO;
-using System.Drawing;
-using System.Net.Http;
 
-
-using Visuales;
-using Start;
 internal class Program
 {
-    public static void Main(string[] args)
+    static async Task Main(string[] args)
     {
         Console.Clear();
+
         Console.CursorVisible = false;
        
-        Mostrar.WriteAt("█████  █   █  █████     ████   ██  ██  █   █  █████  █████  █████  █   █", 10,2, ConsoleColor.White);
-        Mostrar.WriteAt("█    █   █  █         █   █  ██  ██  ██  █  █      █      █   █  ██  █", 12,3, ConsoleColor.White);
-        Mostrar.WriteAt("█    █████  ████      █   █  ██  ██  █████  █ ███  ████   █   █  █████", 12,4, ConsoleColor.White);
-        Mostrar.WriteAt("█    █   █  █         █   █  ██  ██  █  ██  █  ██  █      █   █  █  ██", 12,5, ConsoleColor.White);
-        Mostrar.WriteAt("█    █   █  █████     ████    ████   █   █  █████  █████  █████  █   █", 12,6, ConsoleColor.White);
+        Mostrar.Logo();
 
         bool salir = false;
 
@@ -37,7 +28,9 @@ internal class Program
             switch (i)
             {
                 case 1:
-                     
+                     ObtenerPersonaje.Players Jugador = ObtenerPersonaje.SeleccionarPersonaje();
+                    Console.WriteLine(Jugador.descripcion);
+                     Console.ReadLine();
                     break;
                 case 2:
                     salir = true;
