@@ -1,11 +1,15 @@
 ﻿//Alumno: Barrionuevo Santiago Horacio - Ing. En Informática
-using Visuales;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Text;
 using System.IO;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Drawing;
+using System.Net.Http;
+
+
+using Visuales;
+using Start;
 internal class Program
 {
     public static void Main(string[] args)
@@ -33,9 +37,7 @@ internal class Program
             switch (i)
             {
                 case 1:
-                    Console.Clear();
-                    Mostrar.WriteAt("Inciado", 30, 10, ConsoleColor.Red);
-                    Console.ReadLine();    
+                     
                     break;
                 case 2:
                     salir = true;
