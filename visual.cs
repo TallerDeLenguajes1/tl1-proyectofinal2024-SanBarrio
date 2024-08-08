@@ -107,40 +107,40 @@ public static class Mostrar
     {
         if (clase == "Mago")
         {
-            WriteAt("O  *", x, y, ConsoleColor.White);
-            WriteAt("/|\\/", x - 1, y + 1, ConsoleColor.White);
-            WriteAt("/ \\", x - 1, y + 2, ConsoleColor.White);
+            WriteAt("O  *", x + 1, y - 2, ConsoleColor.White);
+            WriteAt("/|\\/", x, y - 1, ConsoleColor.White);
+            WriteAt("/ \\", x, y, ConsoleColor.White);
         }
         else if (clase == "Caballero")
         {
-            WriteAt("|", x, y, ConsoleColor.White);
-            WriteAt("║ O/─\\", x, y + 1, ConsoleColor.White);
-            WriteAt("┼/|)o(", x, y + 2, ConsoleColor.White);
-            WriteAt("/ \\─/", x + 1, y + 3, ConsoleColor.White);
+            WriteAt("|", x - 1, y - 3, ConsoleColor.White);
+            WriteAt("║ O/─\\", x - 1, y - 2, ConsoleColor.White);
+            WriteAt("┼/|)o(", x - 1, y - 1, ConsoleColor.White);
+            WriteAt("/ \\─/", x, y, ConsoleColor.White);
         }
         else
         {
-            WriteAt("O  ┐", x, y, ConsoleColor.White);
-            WriteAt("╠\\'=╬≡", x-1, y+1, ConsoleColor.White);
-            WriteAt("/ \\ ┘", x-1, y+2, ConsoleColor.White);
+            WriteAt("O  ┐", x + 1, y - 2, ConsoleColor.White);
+            WriteAt("╠\\'=╬≡", x, y - 1, ConsoleColor.White);
+            WriteAt("/ \\ ┘", x, y, ConsoleColor.White);
         }
     }
     public static void EnemigoBase(string monstruo, int x, int y)
     {
         if (monstruo == "Giant Spider")
         {
-            WriteAt("__", x, y, ConsoleColor.Blue);
-            WriteAt("(  )", x - 1, y + 1, ConsoleColor.Blue);
-            WriteAt("/`  |´\\\\", x - 4, y + 2, ConsoleColor.Blue);
-            WriteAt("°°", x - 2, y + 2, ConsoleColor.Magenta);
-            WriteAt("´    '  ``", x - 5, y + 3, ConsoleColor.Blue);
+            WriteAt("__", x + 2, y - 2, ConsoleColor.Blue);
+            WriteAt("(  )", x +1, y - 1, ConsoleColor.Blue);
+            WriteAt("/`  |´\\\\", x -2, y, ConsoleColor.Blue);
+            WriteAt("°°", x , y , ConsoleColor.Magenta);
+            WriteAt("´    '  ``", x-3, y+1, ConsoleColor.Blue);
         }
         else
         {
-            WriteAt("|/)", 33, 10, ConsoleColor.DarkGreen);
-            WriteAt("o.─._", 32, 11, ConsoleColor.DarkGreen);
-            WriteAt("´ /|`─`", 31, 12, ConsoleColor.DarkGreen);
-            WriteAt("`'", 33, 12, ConsoleColor.DarkGreen);
+            WriteAt("|/)", x+1, y-3, ConsoleColor.DarkGreen);
+            WriteAt("o.─._", x-1, y-2, ConsoleColor.DarkGreen);
+            WriteAt("´ /|`─`", x-2, y-1, ConsoleColor.DarkGreen);
+            WriteAt("`'", x, y, ConsoleColor.DarkGreen);
         }
     }
     public static async void AtaquePersonaje(string clase, int x, int y)
@@ -150,84 +150,84 @@ public static class Mostrar
 
             for (int i = 1; i <= 12; i++)
             {
-                WriteAt("                    ", x - 7, y - 1, ConsoleColor.White);
-                WriteAt("                    ", x - 7, y, ConsoleColor.White);
-                WriteAt("                    ", x - 7, y + 1, ConsoleColor.White);
-                WriteAt("                    ", x - 7, y + 2, ConsoleColor.White);
-                WriteAt("                    ", x - 7, y + 3, ConsoleColor.White);
+                WriteAt("                    ", x - 4, y - 4, ConsoleColor.White);
+                WriteAt("                    ", x - 4, y - 3, ConsoleColor.White);
+                WriteAt("                    ", x - 4, y - 2, ConsoleColor.White);
+                WriteAt("                    ", x - 4, y - 1, ConsoleColor.White);
+                WriteAt("                    ", x - 4, y, ConsoleColor.White);
                 switch (i)
                 {
                     case 1:
-                        WriteAt("*", x, y, ConsoleColor.White);
-                        WriteAt("O |", x - 2, y + 1, ConsoleColor.White);
-                        WriteAt("/|¯¯", x - 3, y + 2, ConsoleColor.White);
-                        WriteAt("/ \\", x - 3, y + 3, ConsoleColor.White);
+                        WriteAt("*", x + 3, y - 3, ConsoleColor.White);
+                        WriteAt("O |", x + 1, y - 2, ConsoleColor.White);
+                        WriteAt("/|¯¯", x, y - 1, ConsoleColor.White);
+                        WriteAt("/ \\", x, y, ConsoleColor.White);
                         break;
                     case 2:
-                        WriteAt("*", x - 2, y - 1, ConsoleColor.White);
-                        WriteAt("\\", x - 1, y, ConsoleColor.White);
-                        WriteAt("O/", x - 2, y + 1, ConsoleColor.White);
-                        WriteAt("/|", x - 3, y + 2, ConsoleColor.White);
-                        WriteAt("/ \\", x - 3, y + 3, ConsoleColor.White);
+                        WriteAt("*", x + 1, y - 4, ConsoleColor.White);
+                        WriteAt("\\", x + 2, y - 3, ConsoleColor.White);
+                        WriteAt("O/", x + 1, y - 2, ConsoleColor.White);
+                        WriteAt("/|", x, y - 1, ConsoleColor.White);
+                        WriteAt("/ \\", x, y, ConsoleColor.White);
                         break;
                     case 3:
-                        WriteAt("*──", x - 5, y, ConsoleColor.White);
-                        WriteAt("O)", x - 2, y + 1, ConsoleColor.White);
-                        WriteAt("/|", x - 3, y + 2, ConsoleColor.White);
-                        WriteAt("/ \\", x - 3, y + 3, ConsoleColor.White);
+                        WriteAt("*──", x - 2, y - 3, ConsoleColor.White);
+                        WriteAt("O)", x + 1, y - 2, ConsoleColor.White);
+                        WriteAt("/|", x, y - 1, ConsoleColor.White);
+                        WriteAt("/ \\", x, y, ConsoleColor.White);
                         break;
                     case 4:
-                        WriteAt("'", x - 4, y - 1, ConsoleColor.White);
-                        WriteAt("─ *──", x - 7, y, ConsoleColor.White);
-                        WriteAt(". O)", x - 4, y + 1, ConsoleColor.White);
-                        WriteAt("/|", x - 3, y + 2, ConsoleColor.White);
-                        WriteAt("/ \\", x - 3, y + 3, ConsoleColor.White);
+                        WriteAt("'", x - 1, y - 4, ConsoleColor.White);
+                        WriteAt("─ *──", x - 4, y - 3, ConsoleColor.White);
+                        WriteAt(". O)", x - 1, y - 2, ConsoleColor.White);
+                        WriteAt("/|", x, y - 1, ConsoleColor.White);
+                        WriteAt("/ \\", x, y, ConsoleColor.White);
                         break;
                     case 5:
-                        WriteAt(".", x - 4, y - 1, ConsoleColor.White);
-                        WriteAt("-*──", x - 6, y, ConsoleColor.White);
-                        WriteAt("' O)", x - 4, y + 1, ConsoleColor.White);
-                        WriteAt("/|", x - 3, y + 2, ConsoleColor.White);
-                        WriteAt("/ \\", x - 3, y + 3, ConsoleColor.White);
+                        WriteAt(".", x - 1, y - 4, ConsoleColor.White);
+                        WriteAt("-*──", x - 3, y - 3, ConsoleColor.White);
+                        WriteAt("' O)", x - 1, y - 2, ConsoleColor.White);
+                        WriteAt("/|", x, y - 1, ConsoleColor.White);
+                        WriteAt("/ \\", x, y, ConsoleColor.White);
                         break;
                     case 6:
-                        WriteAt("*", x - 2, y - 1, ConsoleColor.White);
-                        WriteAt("\\", x - 1, y, ConsoleColor.White);
-                        WriteAt("O/", x - 2, y + 1, ConsoleColor.White);
-                        WriteAt("/|", x - 3, y + 2, ConsoleColor.White);
-                        WriteAt("/ \\", x - 3, y + 3, ConsoleColor.White);
+                        WriteAt("*", x + 1, y - 4, ConsoleColor.White);
+                        WriteAt("\\", x + 2, y - 3, ConsoleColor.White);
+                        WriteAt("O/", x + 1, y - 2, ConsoleColor.White);
+                        WriteAt("/|", x, y - 1, ConsoleColor.White);
+                        WriteAt("/ \\", x, y, ConsoleColor.White);
                         break;
                     case 7:
-                        WriteAt("*", x, y, ConsoleColor.White);
-                        WriteAt("O_/", x - 2, y + 1, ConsoleColor.White);
-                        WriteAt("/|", x - 3, y + 2, ConsoleColor.White);
-                        WriteAt("/ \\", x - 3, y + 3, ConsoleColor.White);
+                        WriteAt("*", x + 3, y - 3, ConsoleColor.White);
+                        WriteAt("O_/", x + 1, y - 2, ConsoleColor.White);
+                        WriteAt("/|", x, y - 1, ConsoleColor.White);
+                        WriteAt("/ \\", x, y, ConsoleColor.White);
                         break;
                     case 8:
-                        WriteAt("O", x - 2, y + 1, ConsoleColor.White);
-                        WriteAt("/|\\──*", x - 3, y + 2, ConsoleColor.White);
-                        WriteAt("/ \\", x - 3, y + 3, ConsoleColor.White);
+                        WriteAt("O", x + 1, y - 2, ConsoleColor.White);
+                        WriteAt("/|\\──*", x, y - 1, ConsoleColor.White);
+                        WriteAt("/ \\", x, y, ConsoleColor.White);
                         break;
                     case 9:
-                        WriteAt("O", x - 2, y + 1, ConsoleColor.White);
-                        WriteAt("/|\\──*", x - 3, y + 2, ConsoleColor.White);
-                        WriteAt("◄■", x + 5, y + 2, ConsoleColor.Red);
-                        WriteAt("/ \\", x - 3, y + 3, ConsoleColor.White);
+                        WriteAt("O", x + 1, y - 2, ConsoleColor.White);
+                        WriteAt("/|\\──*", x, y - 1, ConsoleColor.White);
+                        WriteAt("◄■", x + 8, y - 1, ConsoleColor.Red);
+                        WriteAt("/ \\", x, y, ConsoleColor.White);
                         break;
                     case 10:
-                        WriteAt("O", x - 2, y + 1, ConsoleColor.White);
-                        WriteAt("/|\\──*", x - 3, y + 2, ConsoleColor.White);
-                        WriteAt("██", x + 8, y + 2, ConsoleColor.Red);
-                        WriteAt("/ \\", x - 3, y + 3, ConsoleColor.White);
+                        WriteAt("O", x + 1, y - 2, ConsoleColor.White);
+                        WriteAt("/|\\──*", x, y - 1, ConsoleColor.White);
+                        WriteAt("██", x + 11, y - 1, ConsoleColor.Red);
+                        WriteAt("/ \\", x, y, ConsoleColor.White);
                         break;
                     case 11:
-                        WriteAt("O", x - 2, y + 1, ConsoleColor.White);
-                        WriteAt("/|\\──*", x - 3, y + 2, ConsoleColor.White);
-                        WriteAt("██", x + 11, y + 2, ConsoleColor.Red);
-                        WriteAt("/ \\", x - 3, y + 3, ConsoleColor.White);
+                        WriteAt("O", x + 1, y - 2, ConsoleColor.White);
+                        WriteAt("/|\\──*", x, y - 1, ConsoleColor.White);
+                        WriteAt("██", x + 14, y - 1, ConsoleColor.Red);
+                        WriteAt("/ \\", x, y, ConsoleColor.White);
                         break;
                     default:
-                        PersonajeBase(clase, x - 2, y + 1);
+                        PersonajeBase(clase, x, y);
                         break;
                 }
                 await Task.Delay(40);
@@ -238,47 +238,47 @@ public static class Mostrar
         {
             for (int i = 1; i <= 7; i++)
             {
+                WriteAt("                         ", x - 3, y - 2, ConsoleColor.White);
+                WriteAt("                         ", x - 3, y - 1, ConsoleColor.White);
                 WriteAt("                         ", x - 3, y, ConsoleColor.White);
-                WriteAt("                         ", x - 3, y + 1, ConsoleColor.White);
-                WriteAt("                         ", x - 3, y + 2, ConsoleColor.White);
                 switch (i)
                 {
                     case 1:
-                        WriteAt("O  ┐", x, y, ConsoleColor.White);
-                        WriteAt("╠\\'=╬≡", x-1, y+1, ConsoleColor.White);
-                        WriteAt("/ \\ ┘", x-1, y+2, ConsoleColor.White);
+                        WriteAt("O  ┐", x + 1, y - 2, ConsoleColor.White);
+                        WriteAt("╠\\'=╬≡", x, y - 1, ConsoleColor.White);
+                        WriteAt("/ \\ ┘", x, y, ConsoleColor.White);
                         break;
                     case 2:
-                        WriteAt("O  ┐ ´", x, y, ConsoleColor.White);
-                        WriteAt("╠\\'=╬≡~", x-1, y+1, ConsoleColor.White);
-                        WriteAt("©", x+6, y+1, ConsoleColor.Green);
-                        WriteAt("/ \\ ┘ ,", x-1, y+2, ConsoleColor.White);
+                        WriteAt("O  ┐ ´", x + 1, y - 2, ConsoleColor.White);
+                        WriteAt("╠\\'=╬≡~", x, y - 1, ConsoleColor.White);
+                        WriteAt("©", x + 7, y - 1, ConsoleColor.Green);
+                        WriteAt("/ \\ ┘ ,", x, y, ConsoleColor.White);
                         break;
                     case 3:
-                        WriteAt("O ┐   ·", x, y, ConsoleColor.White);
-                        WriteAt("╠(='╬≡« ·", x-2, y+1, ConsoleColor.White);
-                        WriteAt("©", x+8, y+1, ConsoleColor.Green);
-                        WriteAt("/ \\┘   ·", x-1, y+2, ConsoleColor.White);
+                        WriteAt("O ┐   ·", x + 1, y - 2, ConsoleColor.White);
+                        WriteAt("╠(='╬≡« ·", x - 1, y - 1, ConsoleColor.White);
+                        WriteAt("©", x + 9, y - 1, ConsoleColor.Green);
+                        WriteAt("/ \\┘   ·", x, y, ConsoleColor.White);
                         break;
                     case 4:
-                        WriteAt("O ┐     ´", x, y, ConsoleColor.White);
-                        WriteAt("╠(='╬≡ ·", x-2, y+1, ConsoleColor.White);
-                        WriteAt("©", x+10, y+1, ConsoleColor.Green);
-                        WriteAt("/ \\┘    ·", x-1, y+2, ConsoleColor.White);
+                        WriteAt("O ┐     ´", x + 1, y - 2, ConsoleColor.White);
+                        WriteAt("╠(='╬≡ ·", x - 1, y - 1, ConsoleColor.White);
+                        WriteAt("©", x + 11, y - 1, ConsoleColor.Green);
+                        WriteAt("/ \\┘    ·", x, y, ConsoleColor.White);
                         break;
                     case 5:
-                        WriteAt("O ┐      '", x, y, ConsoleColor.White);
-                        WriteAt("╠(='╬≡", x-2, y+1, ConsoleColor.White);
-                        WriteAt("<©>", x+12, y+1, ConsoleColor.Green);
-                        WriteAt("/ \\┘     ·", x-1, y+2, ConsoleColor.White);
+                        WriteAt("O ┐      '", x + 1, y - 2, ConsoleColor.White);
+                        WriteAt("╠(='╬≡", x - 1, y - 1, ConsoleColor.White);
+                        WriteAt("<©>", x + 13, y - 1, ConsoleColor.Green);
+                        WriteAt("/ \\┘     ·", x, y, ConsoleColor.White);
                         break;
                     case 6:
-                        WriteAt("O ┐", x, y, ConsoleColor.White);
-                        WriteAt("\\ ' /", x+12, y, ConsoleColor.Red);
-                        WriteAt("╠(='╬≡", x-2, y+1, ConsoleColor.White);
-                        WriteAt("- × -", x+12, y+1, ConsoleColor.Red);
-                        WriteAt("/ \\┘", x-1, y+2, ConsoleColor.White);
-                        WriteAt("/ · \\ ", x+12, y+2, ConsoleColor.Red);
+                        WriteAt("O ┐", x + 1, y - 2, ConsoleColor.White);
+                        WriteAt("\\ ' /", x + 13, y - 2, ConsoleColor.Red);
+                        WriteAt("╠(='╬≡", x - 1, y - 1, ConsoleColor.White);
+                        WriteAt("- × -", x + 13, y - 1, ConsoleColor.Red);
+                        WriteAt("/ \\┘", x, y, ConsoleColor.White);
+                        WriteAt("/ · \\ ", x + 13, y, ConsoleColor.Red);
                         break;
 
                     default:
@@ -292,67 +292,67 @@ public static class Mostrar
         {
             for (int i = 1; i <= 10; i++)
             {
-                WriteAt("                    ", x - 4, y - 1, ConsoleColor.White);
-                WriteAt("                    ", x - 4, y, ConsoleColor.White);
-                WriteAt("                    ", x - 4, y + 1, ConsoleColor.White);
-                WriteAt("                    ", x - 4, y + 2, ConsoleColor.White);
-                WriteAt("                    ", x - 4, y + 3, ConsoleColor.White);
+                WriteAt("                    ", x - 6, y - 4, ConsoleColor.White);
+                WriteAt("                    ", x - 6, y - 3, ConsoleColor.White);
+                WriteAt("                    ", x - 6, y - 2, ConsoleColor.White);
+                WriteAt("                    ", x - 6, y - 1, ConsoleColor.White);
+                WriteAt("                    ", x - 6, y, ConsoleColor.White);
                 switch (i)
                 {
                     case 1:
-                        WriteAt("|", x, y, ConsoleColor.White);
-                        WriteAt("║ O /\\", x, y + 1, ConsoleColor.White);
-                        WriteAt("┼/|`)o", x, y + 2, ConsoleColor.White);
-                        WriteAt("/ \\\\/", x + 1, y + 3, ConsoleColor.White);
+                        WriteAt("|", x - 1, y - 3, ConsoleColor.White);
+                        WriteAt("║ O /\\", x - 1, y - 2, ConsoleColor.White);
+                        WriteAt("┼/|`)o", x - 1, y - 1, ConsoleColor.White);
+                        WriteAt("/ \\\\/", x, y, ConsoleColor.White);
                         break;
                     case 2:
-                        WriteAt("|", x, y - 1, ConsoleColor.White);
-                        WriteAt("║", x, y, ConsoleColor.White);
-                        WriteAt("┼_O /\\", x, y + 1, ConsoleColor.White);
-                        WriteAt("|¯)(", x + 2, y + 2, ConsoleColor.White);
-                        WriteAt("/ \\\\/", x + 1, y + 3, ConsoleColor.White);
+                        WriteAt("|", x - 1, y - 4, ConsoleColor.White);
+                        WriteAt("║", x - 1, y - 3, ConsoleColor.White);
+                        WriteAt("┼_O /\\", x - 1, y - 2, ConsoleColor.White);
+                        WriteAt("|¯)(", x + 1, y - 1, ConsoleColor.White);
+                        WriteAt("/ \\\\/", x, y, ConsoleColor.White);
                         break;
                     case 3:
-                        WriteAt("──═┼", x - 3, y, ConsoleColor.White);
-                        WriteAt("\\O/─\\", x + 1, y + 1, ConsoleColor.White);
-                        WriteAt("|¯ (", x + 2, y + 2, ConsoleColor.White);
-                        WriteAt("/ \\─/", x + 1, y + 3, ConsoleColor.White);
+                        WriteAt("──═┼", x - 4, y - 3, ConsoleColor.White);
+                        WriteAt("\\O/─\\", x, y - 2, ConsoleColor.White);
+                        WriteAt("|¯ (", x + 1, y - 1, ConsoleColor.White);
+                        WriteAt("/ \\─/", x, y, ConsoleColor.White);
                         break;
                     case 4:
-                        WriteAt("──═┼", x - 3, y, ConsoleColor.White);
-                        WriteAt("\\O─\\", x + 1, y + 1, ConsoleColor.White);
-                        WriteAt("|V(", x + 2, y + 2, ConsoleColor.White);
-                        WriteAt("/\\\\/", x + 1, y + 3, ConsoleColor.White);
+                        WriteAt("──═┼", x - 4, y - 3, ConsoleColor.White);
+                        WriteAt("\\O─\\", x, y - 2, ConsoleColor.White);
+                        WriteAt("|V(", x + 1, y - 1, ConsoleColor.White);
+                        WriteAt("/\\\\/", x, y, ConsoleColor.White);
                         break;
                     case 5:
-                        WriteAt(".---._", x - 2, y - 1, ConsoleColor.Blue);
-                        WriteAt("'       '.", x - 3, y, ConsoleColor.Blue);
-                        WriteAt("O─\\", x + 2, y + 1, ConsoleColor.White);
-                        WriteAt("\\\\", x + 5, y + 1, ConsoleColor.Blue);
-                        WriteAt("\\┼═──", x + 2, y + 2, ConsoleColor.White);
-                        WriteAt("/\\\\/", x + 1, y + 3, ConsoleColor.White);
+                        WriteAt(".---._", x - 3, y - 4, ConsoleColor.Blue);
+                        WriteAt("'       '.", x - 4, y - 3, ConsoleColor.Blue);
+                        WriteAt("O─\\", x + 1, y - 2, ConsoleColor.White);
+                        WriteAt("\\\\", x + 4, y - 2, ConsoleColor.Blue);
+                        WriteAt("\\┼═──", x + 1, y - 1, ConsoleColor.White);
+                        WriteAt("/\\\\/", x, y, ConsoleColor.White);
                         break;
                     case 6:
-                        WriteAt("O─\\", x + 2, y + 1, ConsoleColor.White);
-                        WriteAt("\\┼═──", x + 2, y + 2, ConsoleColor.White);
-                        WriteAt("/\\\\/", x + 1, y + 3, ConsoleColor.White);
+                        WriteAt("O─\\", x + 1, y - 2, ConsoleColor.White);
+                        WriteAt("\\┼═──", x + 1, y - 1, ConsoleColor.White);
+                        WriteAt("/\\\\/", x, y, ConsoleColor.White);
                         break;
                     case 7:
-                        WriteAt("O/─\\", x + 2, y + 1, ConsoleColor.White);
-                        WriteAt("/┼═──", x + 1, y + 2, ConsoleColor.White);
-                        WriteAt("/ \\─/", x + 1, y + 3, ConsoleColor.White);
+                        WriteAt("O/─\\", x + 1, y - 2, ConsoleColor.White);
+                        WriteAt("/┼═──", x, y - 1, ConsoleColor.White);
+                        WriteAt("/ \\─/", x, y, ConsoleColor.White);
                         break;
                     case 8:
-                        WriteAt("|", x, y, ConsoleColor.White);
-                        WriteAt("║ O /\\", x, y + 1, ConsoleColor.White);
-                        WriteAt("┼/|¯)(", x, y + 2, ConsoleColor.White);
-                        WriteAt("/ \\\\/", x + 1, y + 3, ConsoleColor.White);
+                        WriteAt("|", x - 1, y - 3, ConsoleColor.White);
+                        WriteAt("║ O /\\", x - 1, y - 2, ConsoleColor.White);
+                        WriteAt("┼/|¯)(", x - 1, y - 1, ConsoleColor.White);
+                        WriteAt("/ \\\\/", x, y, ConsoleColor.White);
                         break;
                     case 9:
-                        WriteAt("|", x, y, ConsoleColor.White);
-                        WriteAt("║ O /\\", x, y + 1, ConsoleColor.White);
-                        WriteAt("┼/|`)o", x, y + 2, ConsoleColor.White);
-                        WriteAt("/ \\\\/", x + 1, y + 3, ConsoleColor.White);
+                        WriteAt("|", x - 1, y - 3, ConsoleColor.White);
+                        WriteAt("║ O /\\", x - 1, y - 2, ConsoleColor.White);
+                        WriteAt("┼/|`)o", x - 1, y - 1, ConsoleColor.White);
+                        WriteAt("/ \\\\/", x, y, ConsoleColor.White);
                         break;
                     default:
                         PersonajeBase(clase, x, y);
@@ -372,62 +372,62 @@ public static class Mostrar
 
             for (int i = 1; i <= 8; i++)
             {
-                WriteAt("                    ", x - 7, y - 1, ConsoleColor.White);
-                WriteAt("                    ", x - 7, y, ConsoleColor.White);
-                WriteAt("                    ", x - 7, y + 1, ConsoleColor.White);
-                WriteAt("                    ", x - 7, y + 2, ConsoleColor.White);
-                WriteAt("                    ", x - 7, y + 3, ConsoleColor.White);
-                WriteAt("                    ", x - 7, y + 4, ConsoleColor.White);
+                WriteAt("                    ", x - 5, y - 3, ConsoleColor.White);
+                WriteAt("                    ", x - 5, y - 2, ConsoleColor.White);
+                WriteAt("                    ", x - 5, y - 1, ConsoleColor.White);
+                WriteAt("                    ", x - 5, y, ConsoleColor.White);
+                WriteAt("                    ", x - 5, y + 1, ConsoleColor.White);
+                WriteAt("                    ", x - 5, y + 2, ConsoleColor.White);
                 switch (i)
                 {
                     case 1:
-                        WriteAt("__", x, y, ConsoleColor.Blue);
-                        WriteAt("_  (  )", x - 4, y + 1, ConsoleColor.Blue);
-                        WriteAt("´ `  /´\\\\", x - 5, y + 2, ConsoleColor.Blue);
-                        WriteAt("°°", x - 2, y + 2, ConsoleColor.Magenta);
-                        WriteAt("`  ``", x, y + 3, ConsoleColor.Blue);
+                        WriteAt("__", x+2, y - 2, ConsoleColor.Blue);
+                        WriteAt("_  (  )", x - 2, y - 1, ConsoleColor.Blue);
+                        WriteAt("´ `  /´\\\\", x -3, y, ConsoleColor.Blue);
+                        WriteAt("°°", x, y, ConsoleColor.Magenta);
+                        WriteAt("`  ``", x+2, y+1, ConsoleColor.Blue);
                         break;
                     case 2:
-                        WriteAt("__", x, y, ConsoleColor.Blue);
-                        WriteAt("─. (  )", x - 4, y + 1, ConsoleColor.Blue);
-                        WriteAt("(`´\\\\", x - 1, y + 2, ConsoleColor.Blue);
-                        WriteAt("°", x - 2, y + 2, ConsoleColor.Magenta);
-                        WriteAt("' `", x + 2, y + 3, ConsoleColor.Blue);
+                        WriteAt("__", x +2, y - 2, ConsoleColor.Blue);
+                        WriteAt("─. (  )", x-2, y - 1, ConsoleColor.Blue);
+                        WriteAt("(`´\\\\", x +1, y , ConsoleColor.Blue);
+                        WriteAt("°", x, y, ConsoleColor.Magenta);
+                        WriteAt("' `", x+4, y+1, ConsoleColor.Blue);
                         break;
                     case 3:
-                        WriteAt("__", x, y, ConsoleColor.Blue);
-                        WriteAt("`\\_(  )", x - 4, y + 1, ConsoleColor.Blue);
-                        WriteAt("`´\\\\", x, y + 2, ConsoleColor.Blue);
-                        WriteAt("°°", x - 2, y + 2, ConsoleColor.Magenta);
-                        WriteAt("' `", x + 2, y + 3, ConsoleColor.Blue);
+                        WriteAt("__", x +2, y - 2, ConsoleColor.Blue);
+                        WriteAt("`\\_(  )", x -2, y - 1, ConsoleColor.Blue);
+                        WriteAt("`´\\\\", x + 2, y , ConsoleColor.Blue);
+                        WriteAt("°°", x, y , ConsoleColor.Magenta);
+                        WriteAt("' `", x+4, y+1, ConsoleColor.Blue);
                         break;
                     case 4:
-                        WriteAt(", __", x - 2, y, ConsoleColor.Blue);
-                        WriteAt("(\\(  )", x - 3, y + 1, ConsoleColor.Blue);
-                        WriteAt("`´)\\", x, y + 2, ConsoleColor.Blue);
-                        WriteAt("°°", x - 2, y + 2, ConsoleColor.Magenta);
-                        WriteAt("´ '", x - 1, y + 3, ConsoleColor.Blue);
+                        WriteAt(", __", x, y - 2, ConsoleColor.Blue);
+                        WriteAt("(\\(  )", x - 1, y - 1, ConsoleColor.Blue);
+                        WriteAt("`´)\\", x +2, y , ConsoleColor.Blue);
+                        WriteAt("°°", x , y, ConsoleColor.Magenta);
+                        WriteAt("´ '", x+3, y+1, ConsoleColor.Blue);
                         break;
                     case 5:
-                        WriteAt(",,__", x - 2, y, ConsoleColor.Blue);
-                        WriteAt("(((  )", x - 3, y + 1, ConsoleColor.Blue);
-                        WriteAt("`´)\\", x, y + 2, ConsoleColor.Blue);
-                        WriteAt("°°", x - 2, y + 2, ConsoleColor.Magenta);
-                        WriteAt("´ '", x + 1, y + 3, ConsoleColor.Blue);
+                        WriteAt(",,__", x , y - 2, ConsoleColor.Blue);
+                        WriteAt("(((  )", x - 1, y - 1, ConsoleColor.Blue);
+                        WriteAt("`´)\\", x +2, y , ConsoleColor.Blue);
+                        WriteAt("°°", x, y, ConsoleColor.Magenta);
+                        WriteAt("´ '", x+3, y+1, ConsoleColor.Blue);
                         break;
                     case 6:
-                        WriteAt(",´/__", x - 3, y, ConsoleColor.Blue);
-                        WriteAt("/ .(  )", x - 4, y + 1, ConsoleColor.Blue);
-                        WriteAt("(  |  ´\\\\", x - 5, y + 2, ConsoleColor.Blue);
-                        WriteAt("\\ '   ' `", x - 4, y + 3, ConsoleColor.Blue);
-                        WriteAt("``", x - 3, y + 4, ConsoleColor.Blue);
+                        WriteAt(",´/__", x - 1, y - 2, ConsoleColor.Blue);
+                        WriteAt("/ .(  )", x - 2, y - 1, ConsoleColor.Blue);
+                        WriteAt("(  |  ´\\\\", x-3, y, ConsoleColor.Blue);
+                        WriteAt("\\ '   ' `", x-2, y+1, ConsoleColor.Blue);
+                        WriteAt("``", x - 1, y + 2, ConsoleColor.Blue);
                         break;
                     case 7:
-                        WriteAt("__", x, y, ConsoleColor.Blue);
-                        WriteAt("(  )", x - 1, y + 1, ConsoleColor.Blue);
-                        WriteAt(",  .´\\\\", x - 3, y + 2, ConsoleColor.Blue);
-                        WriteAt("°°", x - 2, y + 2, ConsoleColor.Magenta);
-                        WriteAt("\\  |  ``", x - 3, y + 3, ConsoleColor.Blue);
+                        WriteAt("__", x + 2, y - 2, ConsoleColor.Blue);
+                        WriteAt("(  )", x + 1, y - 1, ConsoleColor.Blue);
+                        WriteAt(",  .´\\\\", x-1, y, ConsoleColor.Blue);
+                        WriteAt("°°", x, y, ConsoleColor.Magenta);
+                        WriteAt("\\  |  ``", x-1, y+1, ConsoleColor.Blue);
                         break;
                     default:
                         EnemigoBase(monstruo, x, y);
@@ -437,9 +437,186 @@ public static class Mostrar
 
             }
         }
-        else
+        else if(monstruo == "Swarm of Insects")
         {
+            for (int i = 1; i <= 20; i++)
+            {
+                WriteAt("                    ", x - 3, y -4, ConsoleColor.White);
+                WriteAt("                    ", x - 3, y-3, ConsoleColor.White);
+                WriteAt("                    ", x - 3, y -2, ConsoleColor.White);
+                WriteAt("                    ", x - 3, y -1, ConsoleColor.White);
+                WriteAt("                    ", x - 3, y, ConsoleColor.White);
+                switch (i)
+                {
+                    case 1:
+                        WriteAt("|/)", x+1, y-3, ConsoleColor.DarkGreen);
+                        WriteAt("o.─._", x-1, y-2, ConsoleColor.DarkGreen);
+                        WriteAt("´ /|`─`", x-2, y-1, ConsoleColor.DarkGreen);
+                        WriteAt("`'", x, y, ConsoleColor.DarkGreen);
+                        break;
+                    case 2:
+                        WriteAt("─", x+2, y-3, ConsoleColor.DarkGreen);
+                        WriteAt("o.─._", x-1, y-2, ConsoleColor.DarkGreen);
+                        WriteAt("´ /|`─`", x-2, y-1, ConsoleColor.DarkGreen);
+                        WriteAt("`'", x,y, ConsoleColor.DarkGreen);
+                        break;
+                    case 3:
+                        WriteAt("|/)", x+1, y-3, ConsoleColor.DarkGreen);
+                        WriteAt("o.─._", x-1, y-2, ConsoleColor.DarkGreen);
+                        WriteAt("´ /|`─`", x-2, y-1, ConsoleColor.DarkGreen);
+                        WriteAt("`'", x, y, ConsoleColor.DarkGreen);
+                        break;
+                    case 4:
+                        WriteAt("─", x+2, y-3, ConsoleColor.DarkGreen);
+                        WriteAt("o.─._", x-1, y-2, ConsoleColor.DarkGreen);
+                        WriteAt("´ /|`─`", x-2, y-1, ConsoleColor.DarkGreen);
+                        WriteAt("`'", x,y, ConsoleColor.DarkGreen);
+                        break;
+                    case 5:
+                        WriteAt("|/)", x+1, y-3, ConsoleColor.DarkGreen);
+                        WriteAt("o.─._", x-1, y-2, ConsoleColor.DarkGreen);
+                        WriteAt("´ /|`─`", x-2, y-1, ConsoleColor.DarkGreen);
+                        WriteAt("`'", x,y, ConsoleColor.DarkGreen);
+                        break;
+                    case 6:
+                        WriteAt("─", x+2, y-3, ConsoleColor.DarkGreen);
+                        WriteAt(",o.─._", x-1, y-2, ConsoleColor.DarkGreen);
+                        WriteAt("/|`─`", x, y-1, ConsoleColor.DarkGreen);
+                        WriteAt("`'", x,y, ConsoleColor.DarkGreen);
+                        break;
+                    case 7:
+                        WriteAt("|/)", x+2, y-3, ConsoleColor.DarkGreen);
+                        WriteAt(",o─._", x-1, y-2, ConsoleColor.DarkGreen);
+                        WriteAt("/|`─`", x, y-1, ConsoleColor.DarkGreen);
+                        WriteAt("`'", x,y, ConsoleColor.DarkGreen);
+                        break;
+                    case 8:
+                         WriteAt("─", x+2, y-3, ConsoleColor.DarkGreen);
+                        WriteAt(",o.─._", x-1, y-2, ConsoleColor.DarkGreen);
+                        WriteAt("/|`─`", x, y-1, ConsoleColor.DarkGreen);
+                        WriteAt("`'", x,y, ConsoleColor.DarkGreen);
+                        break;
+                    case 9:
+                        WriteAt("|/)", x+1, y-3, ConsoleColor.DarkGreen);
+                        WriteAt("o.─._", x-1, y-2, ConsoleColor.DarkGreen);
+                        WriteAt("/ /|`─`", x-2, y-1, ConsoleColor.DarkGreen);
+                        WriteAt("`'", x,y, ConsoleColor.DarkGreen);
+                        break;
+                    case 10:
+                        WriteAt("─", x+2, y-3, ConsoleColor.DarkGreen);
+                        WriteAt("o.─._", x-1, y-2, ConsoleColor.DarkGreen);
+                        WriteAt("/ /|`─`", x-2, y-1, ConsoleColor.DarkGreen);
+                        WriteAt("`'", x,y, ConsoleColor.DarkGreen);
+                        break;
+                    case 11:
+                        WriteAt("|/)", x+1, y-3, ConsoleColor.DarkGreen);
+                        WriteAt("o.─._", x-1, y-2, ConsoleColor.DarkGreen);
+                        WriteAt("/ /|`.`", x-2, y-1, ConsoleColor.DarkGreen);
+                        WriteAt("`'", x,y, ConsoleColor.DarkGreen);
+                        break;
+                    case 12:
+                        WriteAt("─", x+2, y-3, ConsoleColor.DarkGreen);
+                        WriteAt("o.─._", x-1, y-2, ConsoleColor.DarkGreen);
+                        WriteAt("/ /|\\ `.", x-2, y-1, ConsoleColor.DarkGreen);
+                        WriteAt("`' `-'", x, y, ConsoleColor.DarkGreen);
+                        break;
+                    case 13:
+                        WriteAt("|/)", x+1, y-3, ConsoleColor.DarkGreen);
+                        WriteAt("o.─._", x-1, y-2, ConsoleColor.DarkGreen);
+                        WriteAt("/ /|\\ `.", x-2, y-1, ConsoleColor.DarkGreen);
+                        WriteAt("`' `-'", x, y, ConsoleColor.DarkGreen);
+                        break;
+                    case 14:
+                        WriteAt("─", x+2, y-3, ConsoleColor.DarkGreen);
+                        WriteAt("o.─._", x-1, y-2, ConsoleColor.DarkGreen);
+                        WriteAt("/ /|\\ `.", x-2, y-1, ConsoleColor.DarkGreen);
+                        WriteAt("`' `-'", x, y, ConsoleColor.DarkGreen);
+                        break;
+                    case 15:
+                        WriteAt("|/)", x+1, y-3, ConsoleColor.DarkGreen);
+                        WriteAt("o.─._", x-1, y-2, ConsoleColor.DarkGreen);
+                        WriteAt("/ /|\\ `.", x-2, y-1, ConsoleColor.DarkGreen);
+                        WriteAt("`' `-'", x, y, ConsoleColor.DarkGreen);
+                        break;
+                    case 16:
+                        WriteAt("─", x+2, y-3, ConsoleColor.DarkGreen);
+                        WriteAt("o.─._", x-1, y-2, ConsoleColor.DarkGreen);
+                        WriteAt("/ /|\\ `.", x-2, y-1, ConsoleColor.DarkGreen);
+                        WriteAt("`' `-'", x, y, ConsoleColor.DarkGreen);
+                        break;
+                    case 17:
+                        WriteAt("|/)", x+1, y-3, ConsoleColor.DarkGreen);
+                        WriteAt("o.─._", x-1, y-2, ConsoleColor.DarkGreen);
+                        WriteAt("´ /|\\ \\", x-2, y-1, ConsoleColor.DarkGreen);
+                        WriteAt("`' `-'", x, y, ConsoleColor.DarkGreen);
+                        break;
+                    case 18:
+                        WriteAt("─", x+2, y-3, ConsoleColor.DarkGreen);
+                        WriteAt("o.─._", x-1, y-2, ConsoleColor.DarkGreen);
+                        WriteAt("´ /|\\ \\", x-2, y-1, ConsoleColor.DarkGreen);
+                        WriteAt("`' `-'", x, y, ConsoleColor.DarkGreen);
+                        break;
+                    case 19:
+                        WriteAt("|/)", x+1, y-3, ConsoleColor.DarkGreen);
+                        WriteAt("o.─._", x-1, y-2, ConsoleColor.DarkGreen);
+                        WriteAt("´ /|`._`", x-2, y-1, ConsoleColor.DarkGreen);
+                        WriteAt("`'", x, y, ConsoleColor.DarkGreen);
+                        break;
+                    default:
+                        EnemigoBase(monstruo, x, y);
+                        break;
+                }
+                await Task.Delay(30);
 
+            }
         }
+    }
+    public static void RecompensaCofre(int x, int y){
+            WriteAt(" ███   ███",x,y,ConsoleColor.DarkRed);
+            WriteAt("█████ █████",x,y+1,ConsoleColor.DarkRed);
+            WriteAt("███████████",x,y+2,ConsoleColor.DarkRed);
+            WriteAt("  ███████",x,y+3,ConsoleColor.DarkRed);
+            WriteAt("   █████",x,y+4,ConsoleColor.DarkRed);
+            WriteAt("     █",x,y+5,ConsoleColor.DarkRed);
+            WriteAt("1. +20 de Vida",x-2,y+7,ConsoleColor.DarkRed);
+
+            WriteAt("   █",x+19,y-1,ConsoleColor.Blue);
+            WriteAt("  ███",x+19,y,ConsoleColor.Blue);
+            WriteAt("  ███",x+19,y+1,ConsoleColor.Blue);
+            WriteAt("  ███",x+19,y+2,ConsoleColor.Blue);
+            WriteAt("  ███",x+19,y+3,ConsoleColor.Blue);
+            WriteAt("███████",x+19,y+4,ConsoleColor.DarkGreen);
+            WriteAt("   █",x+19,y+5,ConsoleColor.DarkGreen);
+            WriteAt("2. +3 de Fuerza",x+15,y+7,ConsoleColor.Blue);
+
+
+            WriteAt("█████████",x+35,y,ConsoleColor.DarkGreen);
+            WriteAt("█       █",x+35,y+1,ConsoleColor.DarkGreen);
+            WriteAt("█       █",x+35,y+2,ConsoleColor.DarkGreen);
+            WriteAt("██     ██",x+35,y+3,ConsoleColor.DarkGreen);
+            WriteAt(" ██   ██",x+35,y+4,ConsoleColor.DarkGreen);
+            WriteAt("  █████",x+35,y+5,ConsoleColor.DarkGreen);
+
+            WriteAt("███████",x+36,y+1,ConsoleColor.DarkBlue);
+            WriteAt("███████",x+36,y+2,ConsoleColor.DarkBlue);
+            WriteAt("█████",x+37,y+3,ConsoleColor.DarkBlue);
+            WriteAt("███",x+38,y+4,ConsoleColor.DarkBlue);
+
+            WriteAt("3. +3 de Armadura",x+32,y+7,ConsoleColor.DarkGreen);
+
+    }
+    public static void RecompensaBatalla(int x, int y){
+        
+            WriteAt(" ███████",x,y,ConsoleColor.Cyan);
+            WriteAt("  █   █",x,y+1,ConsoleColor.Cyan);
+            WriteAt("█       █",x,y+2,ConsoleColor.Cyan);
+            WriteAt("█       █",x,y+3,ConsoleColor.Cyan);
+            WriteAt(" █     █",x,y+4,ConsoleColor.Cyan);
+            WriteAt("  █████",x,y+5,ConsoleColor.Cyan);
+            WriteAt("███████",x+1,y+2,ConsoleColor.DarkRed);
+            WriteAt("███████",x+1,y+3,ConsoleColor.DarkRed);
+            WriteAt("█████",x+2,y+4,ConsoleColor.DarkRed);
+            WriteAt("4. Curar por completo",x,y+7,ConsoleColor.DarkMagenta);
+
     }
 }

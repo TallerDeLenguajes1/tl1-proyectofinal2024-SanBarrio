@@ -21,7 +21,7 @@ internal class Program
         {
             Mostrar.WriteAt("1.Jugar", 33, 9, ConsoleColor.White);
             Mostrar.WriteAt("2.Salir", 33, 11, ConsoleColor.White);
-            Mostrar.WriteAt("Numero: ", 33, 14, ConsoleColor.Red);
+            Mostrar.WriteAt("Escoja un numero: ", 33, 14, ConsoleColor.Red);
 
             int i;
             int.TryParse(Console.ReadLine(), out i);
@@ -29,18 +29,16 @@ internal class Program
             {
                 case 1:
                     ObtenerPersonaje.Players Jugador = ObtenerPersonaje.SeleccionarPersonaje();
-                    int batallas = 0;
-                    int perdedor = 1;
-                   
+                    for(int j=0; j<5; j++){
                     Mostrar.SeleccionPuerta();
-                    EleccionPuerta.EscogerProbabilidad(Jugador);
-                    batallas++;
-                    if(perdedor == 1){
-                    //batalla final
+                    await Task.Delay(80);
+                    Jugador = await EleccionPuerta.EscogerProbabilidad(Jugador);
 
-                    }else{
-                        Mostrar.Perdedor();
+                    if(Jugador.vida < 0){
+                        break;
                     }
+                    }                   
+                    
                      Console.ReadLine();
                     break;
                 case 2:
