@@ -22,7 +22,7 @@ internal class Program
             Console.Clear();
             Mostrar.Logo();
             Mostrar.WriteAt("1.Jugar", 40, 9, ConsoleColor.White);
-            Mostrar.WriteAt("2.Historial", 40, 11, ConsoleColor.White);
+            Mostrar.WriteAt("2.Historial de Ganadores", 40, 11, ConsoleColor.White);
             Mostrar.WriteAt("3.Salir", 40, 13, ConsoleColor.White);
             Mostrar.WriteAt("Escoja un numero: ", 35, 15, ConsoleColor.Red);
 
@@ -42,7 +42,7 @@ internal class Program
                     await Task.Delay(1200);
 
                     Console.Clear();
-                    Mostrar.WriteAt("Iniciando Partida...", 30, 10, ConsoleColor.Red);
+                    Mostrar.WriteAt("Iniciando Partida...", 50, 10, ConsoleColor.Red);
                     await Task.Delay(2000);
                     Console.Clear();
                     Console.ForegroundColor = ConsoleColor.White;
