@@ -20,6 +20,7 @@ Para el nivel final te enfrentas contra el **Lich** Dificultad (Alta).
 ---
 
 ## Requisitos:
+
 *1. Sistema Operativo Windows (para que todo funcione correctamente). Este proyecto no es compatible con linux ya que usa ciertas funciones que no son interpretadas en dicho sistema operativo.*  
 *2. Tener instalado .Net versión 8.0 en su PC. Si no lo tiene descargado puede hacerlo desde [aqui](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)*  
 *3. Clonar el repositorio actual desde una terminal de VisualStudioCode o desde la Bash de Git con el siguiente comando:*  
@@ -27,6 +28,7 @@ Para el nivel final te enfrentas contra el **Lich** Dificultad (Alta).
     git clone https://github.com/TallerDeLenguajes1/tl1-proyectofinal2024-SanBarrio
 ``` 
 *De esta forma se descargará todo el juego en una carpeta con el nombre tl1-proyectofinal2024-SanBarrio*  
+
 *Ahora te dirigiras a la carpeta ..\bin\Debug\net8.0 y ejecutaras el archivo 'Proyecto-Final.exe'*
 ---
 (En caso de que no exista dicho ejecutable)
