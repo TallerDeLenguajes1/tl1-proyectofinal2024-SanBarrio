@@ -10,7 +10,7 @@ internal class Program
     static async Task Main(string[] args)
     {
         Console.Clear();
-        Console.SetWindowSize(110,30);
+        Console.SetWindowSize(120,30);
         Console.CursorVisible = false;
 
 

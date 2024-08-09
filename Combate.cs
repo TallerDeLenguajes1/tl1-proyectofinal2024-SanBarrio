@@ -26,7 +26,7 @@ public class Combate()
             Mostrar.AtaquePersonaje(jugador.clase, 20, 13);
             if ((monstruo.hit_points - jugador.fuerza) <= 0) break;
             else monstruo.hit_points -= jugador.fuerza;
-            await Task.Delay(700);
+            await Task.Delay(1000);
             Mostrar.WriteAt("                               ", 50, 17, ConsoleColor.White);
             Mostrar.WriteAt("Vida: " + monstruo.hit_points + "/" + vidaEnemigo, 50, 17, ConsoleColor.Red);
             Mostrar.AtaqueEnemigo(monstruo.name, 50, 13);
@@ -35,7 +35,7 @@ public class Combate()
             break;
             }
             else jugador.vida -= (monstruo.strength/jugador.defensa)+1;
-            await Task.Delay(700);
+            await Task.Delay(1000);
             Mostrar.WriteAt("                              ", 15, 17, ConsoleColor.White);
             Mostrar.WriteAt("Vida" + jugador.vida + "/" + jugador.vidaMax, 15, 17, ConsoleColor.Green);
 
