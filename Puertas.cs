@@ -68,7 +68,7 @@ public class EleccionPuerta()
             {
                 Console.Clear();
                 Mostrar.Ganador();
-                Mostrar.WriteAt("Dado a tu desempeño la mazmorra desea darte una recompensa", 32, 15, ConsoleColor.Green);
+                Mostrar.WriteAt("Dado a tu desempeño la mazmorra desea darte una recompensa", 30, 15, ConsoleColor.Green);
                 await Task.Delay(2000);
                 Console.Clear();
                 Mostrar.RecompensaCofre(20, 6);

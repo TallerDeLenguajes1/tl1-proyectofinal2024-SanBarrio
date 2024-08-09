@@ -10,7 +10,7 @@ internal class Program
     static async Task Main(string[] args)
     {
         Console.Clear();
-
+        Console.SetWindowSize(110,30);
         Console.CursorVisible = false;
 
 
@@ -42,7 +42,7 @@ internal class Program
                     await Task.Delay(1200);
 
                     Console.Clear();
-                    Mostrar.WriteAt("Iniciando Partida...", 50, 10, ConsoleColor.Red);
+                    Mostrar.WriteAt("Iniciando Partida...", 30, 10, ConsoleColor.Red);
                     await Task.Delay(2000);
                     Console.Clear();
                     Console.ForegroundColor = ConsoleColor.White;
