@@ -144,10 +144,10 @@ public static class Mostrar
         }
         else
         {
-            WriteAt(",", x, y, ConsoleColor.DarkRed);
-            WriteAt("©_/(_", x, y, ConsoleColor.DarkRed);
-            WriteAt("|{\\\\", x, y, ConsoleColor.DarkRed);
-            WriteAt("|-, )", x, y, ConsoleColor.DarkRed);
+            WriteAt("   ,", x, y-4, ConsoleColor.DarkRed);
+            WriteAt("©_/(_", x, y-3, ConsoleColor.DarkRed);
+            WriteAt("|{\\\\", x, y-2, ConsoleColor.DarkRed);
+            WriteAt("|-, )", x, y-1, ConsoleColor.DarkRed);
             WriteAt("|/__\\", x, y, ConsoleColor.DarkRed);
         }
     }
@@ -580,115 +580,117 @@ public static class Mostrar
         }
         else if(monstruo=="Lich")
         {
-            for (int i = 1; i <= 10; i++)
+            for (int i = 1; i <= 14; i++)
             {
-                WriteAt("                    ", x - 5, y - 3, ConsoleColor.White);
-                WriteAt("                    ", x - 5, y - 2, ConsoleColor.White);
-                WriteAt("                    ", x - 5, y - 1, ConsoleColor.White);
-                WriteAt("                    ", x - 5, y, ConsoleColor.White);
-                WriteAt("                    ", x - 5, y + 1, ConsoleColor.White);
-                WriteAt("                    ", x - 5, y + 2, ConsoleColor.White);
+                WriteAt("                         ", x - 5, y - 6, ConsoleColor.White);
+                WriteAt("                         ", x - 5, y - 5, ConsoleColor.White);
+                WriteAt("                         ", x - 5, y - 4, ConsoleColor.White);
+                WriteAt("                         ", x - 5, y - 3, ConsoleColor.White);
+                WriteAt("                         ", x - 5, y - 2, ConsoleColor.White);
+                WriteAt("                         ", x - 5, y - 1, ConsoleColor.White);
+                WriteAt("                         ", x - 5, y, ConsoleColor.White);
 
                 switch (i)
                 {
                     case 1:
-                        WriteAt(",", x, y, ConsoleColor.DarkRed);
-                        WriteAt("©_/(_", x, y, ConsoleColor.DarkRed);
-                        WriteAt("|{\\\\", x, y, ConsoleColor.DarkRed);
-                        WriteAt("|-, )", x, y, ConsoleColor.DarkRed);
+                        WriteAt("   ,", x, y-4, ConsoleColor.DarkRed);
+                        WriteAt("©_/(_", x, y-3, ConsoleColor.DarkRed);
+                        WriteAt("|{\\\\", x, y-2, ConsoleColor.DarkRed);
+                        WriteAt("|-, )", x, y-1, ConsoleColor.DarkRed);
                         WriteAt("|/__\\", x, y, ConsoleColor.DarkRed);
                         break;
                     case 2:
-                        WriteAt("©  ,", x, y, ConsoleColor.DarkRed);
-                        WriteAt("|_/(_", x, y, ConsoleColor.DarkRed);
-                        WriteAt("|{\\\\", x, y, ConsoleColor.DarkRed);
-                        WriteAt("|`,/", x, y, ConsoleColor.DarkRed);
-                        WriteAt("/__\\", x, y, ConsoleColor.DarkRed);
+                        WriteAt("©  ,", x, y-4, ConsoleColor.DarkRed);
+                        WriteAt("|_/(_", x, y-3, ConsoleColor.DarkRed);
+                        WriteAt("|{\\\\", x, y-2, ConsoleColor.DarkRed);
+                        WriteAt("|`,/", x, y-1, ConsoleColor.DarkRed);
+                        WriteAt(" /__\\", x, y, ConsoleColor.DarkRed);
                         break;
                     case 3:
-                        WriteAt("©  ,", x, y, ConsoleColor.DarkRed);
-                        WriteAt("|_/(_", x, y, ConsoleColor.DarkRed);
-                        WriteAt("|{\\\\", x, y, ConsoleColor.DarkRed);
-                        WriteAt("|`/(", x, y, ConsoleColor.DarkRed);
-                        WriteAt("/__\\", x, y, ConsoleColor.DarkRed);
+                        WriteAt("©  ,", x, y-4, ConsoleColor.DarkRed);
+                        WriteAt("|_/(_", x, y-3, ConsoleColor.DarkRed);
+                        WriteAt("|{\\\\", x, y-2, ConsoleColor.DarkRed);
+                        WriteAt("|`/(", x, y-1, ConsoleColor.DarkRed);
+                        WriteAt(" /__\\", x, y, ConsoleColor.DarkRed);
                         break;
                     case 4:
-                        WriteAt("©  ,", x, y, ConsoleColor.DarkRed);
-                        WriteAt("|_/(_", x, y, ConsoleColor.DarkRed);
-                        WriteAt("|{\\\\", x, y, ConsoleColor.DarkRed);
-                        WriteAt("|-´(", x, y, ConsoleColor.DarkRed);
-                        WriteAt("/__\\", x, y, ConsoleColor.DarkRed);
+                        WriteAt("©  ,", x, y-4, ConsoleColor.DarkRed);
+                        WriteAt("|_/(_", x, y-3, ConsoleColor.DarkRed);
+                        WriteAt("|{\\\\", x, y-2, ConsoleColor.DarkRed);
+                        WriteAt("|-´(", x, y-1, ConsoleColor.DarkRed);
+                        WriteAt(" /__\\", x, y, ConsoleColor.DarkRed);
                         break;
                     case 5:
-                        WriteAt("©", x, y, ConsoleColor.DarkRed);
-                        WriteAt("|  ,", x, y, ConsoleColor.DarkRed);
-                        WriteAt("|_/(_", x, y, ConsoleColor.DarkRed);
-                        WriteAt("|{\\\\", x, y, ConsoleColor.DarkRed);
-                        WriteAt("`¯(", x, y, ConsoleColor.DarkRed);
-                        WriteAt("/__\\", x, y, ConsoleColor.DarkRed);
+                        WriteAt("©", x, y-5, ConsoleColor.DarkRed);
+                        WriteAt("|  ,", x, y-4, ConsoleColor.DarkRed);
+                        WriteAt("|_/(_", x, y-3, ConsoleColor.DarkRed);
+                        WriteAt("|{\\\\", x, y-2, ConsoleColor.DarkRed);
+                        WriteAt("`¯(", x, y-1, ConsoleColor.DarkRed);
+                        WriteAt(" /__\\", x, y, ConsoleColor.DarkRed);
                         break;
                     case 6:
-                        WriteAt("©", x, y, ConsoleColor.DarkRed);
-                        WriteAt("/ ,", x, y, ConsoleColor.DarkRed);
-                        WriteAt("//(_", x, y, ConsoleColor.DarkRed);
-                        WriteAt("/{\\\\", x, y, ConsoleColor.DarkRed);
-                        WriteAt("`¯(", x, y, ConsoleColor.DarkRed);
+                        WriteAt("   ©", x, y-5, ConsoleColor.DarkRed);
+                        WriteAt("  /,", x, y-4, ConsoleColor.DarkRed);
+                        WriteAt(" //(_", x, y-3, ConsoleColor.DarkRed);
+                        WriteAt("/{\\\\", x, y-2, ConsoleColor.DarkRed);
+                        WriteAt("`¯(", x, y-1, ConsoleColor.DarkRed);
                         WriteAt("/__\\", x, y, ConsoleColor.DarkRed);
                         break;
                     case 7:
-                        WriteAt(".", x, y, ConsoleColor.DarkRed);
-                        WriteAt("─ © ─", x, y, ConsoleColor.DarkRed);
-                        WriteAt("/ .", x, y, ConsoleColor.DarkRed);
-                        WriteAt("//(_", x, y, ConsoleColor.DarkRed);
-                        WriteAt("/{\\\\", x, y, ConsoleColor.DarkRed);
-                        WriteAt("`¯(", x, y, ConsoleColor.DarkRed);
-                        WriteAt("/__\\", x, y, ConsoleColor.DarkRed);
+                        WriteAt("   .", x, y-6, ConsoleColor.DarkRed);
+                        WriteAt(" ─ © ─", x, y-5, ConsoleColor.DarkRed);
+                        WriteAt("  /.", x, y-4, ConsoleColor.DarkRed);
+                        WriteAt(" //(_", x, y-3, ConsoleColor.DarkRed);
+                        WriteAt("/{\\\\", x, y-2, ConsoleColor.DarkRed);
+                        WriteAt("`¯(", x, y-1, ConsoleColor.DarkRed);
+                        WriteAt(" /__\\", x, y, ConsoleColor.DarkRed);
                         break;
                     case 8:
-                        WriteAt(".", x, y, ConsoleColor.DarkRed);
-                        WriteAt("─©─", x, y, ConsoleColor.DarkRed);
-                        WriteAt("/ .", x, y, ConsoleColor.DarkRed);
-                        WriteAt("//(_", x, y, ConsoleColor.DarkRed);
-                        WriteAt("/{\\\\", x, y, ConsoleColor.DarkRed);
-                        WriteAt("`¯(", x, y, ConsoleColor.DarkRed);
-                        WriteAt("/__\\", x, y, ConsoleColor.DarkRed);
+                        WriteAt("   .", x, y-6, ConsoleColor.DarkRed);
+                        WriteAt("  ─©─", x, y-5, ConsoleColor.DarkRed);
+                        WriteAt("  /.", x, y-4, ConsoleColor.DarkRed);
+                        WriteAt(" //(_", x, y-3, ConsoleColor.DarkRed);
+                        WriteAt("/{\\\\", x-1, y-2, ConsoleColor.DarkRed);
+                        WriteAt("`¯(", x, y-1, ConsoleColor.DarkRed);
+                        WriteAt(" /__\\", x, y, ConsoleColor.DarkRed);
                         break;
                     case 9:
-                        WriteAt("©", x, y, ConsoleColor.DarkRed);
-                        WriteAt("/ ,", x, y, ConsoleColor.DarkRed);
-                        WriteAt("//(_", x, y, ConsoleColor.DarkRed);
-                        WriteAt("/{\\\\", x, y, ConsoleColor.DarkRed);
-                        WriteAt("`¯(", x, y, ConsoleColor.DarkRed);
-                        WriteAt("/__\\", x, y, ConsoleColor.DarkRed);
+                        WriteAt("   ©", x, y-5, ConsoleColor.DarkRed);
+                        WriteAt("  /,", x, y-4, ConsoleColor.DarkRed);
+                        WriteAt(" //(_", x-1, y-3, ConsoleColor.DarkRed);
+                        WriteAt("/{\\\\", x, y-2, ConsoleColor.DarkRed);
+                        WriteAt("`¯(", x, y-1, ConsoleColor.DarkRed);
+                        WriteAt(" /__\\", x, y, ConsoleColor.DarkRed);
                         break;
                     case 10:
-                        WriteAt(":-", x, y, ConsoleColor.DarkRed);
-                        WriteAt("©   ,", x, y, ConsoleColor.DarkRed);
-                        WriteAt("\\  _/(_", x, y, ConsoleColor.DarkRed);
-                        WriteAt("\\ {\\\\", x, y, ConsoleColor.DarkRed);
-                        WriteAt("\\`¯(", x, y, ConsoleColor.DarkRed);
-                        WriteAt("/__\\", x, y, ConsoleColor.DarkRed);
+                        WriteAt("      :-", x-3, y-5, ConsoleColor.DarkRed);
+                        WriteAt("©     ,", x-3, y-4, ConsoleColor.DarkRed);
+                        WriteAt(" \\  _/(_", x-3, y-3, ConsoleColor.DarkRed);
+                        WriteAt("  \\ {\\\\", x-3, y-2, ConsoleColor.DarkRed);
+                        WriteAt("   \\-´(", x-3, y-1, ConsoleColor.DarkRed);
+                        WriteAt("    /__\\", x-3, y, ConsoleColor.DarkRed);
                         break;
                     case 11:
-                        WriteAt("·,¯", x, y, ConsoleColor.DarkRed);
-                        WriteAt("©   ,", x, y, ConsoleColor.DarkRed);
-                        WriteAt("\\  _/(_", x, y, ConsoleColor.DarkRed);
-                        WriteAt("\\ {\\\\", x, y, ConsoleColor.DarkRed);
-                        WriteAt("\\`¯(", x, y, ConsoleColor.DarkRed);
-                        WriteAt("/__\\", x, y, ConsoleColor.DarkRed);
+                        WriteAt("        ·,¯", x-3, y-5, ConsoleColor.DarkRed);
+                        WriteAt("©      ,", x-3, y-4, ConsoleColor.DarkRed);
+                        WriteAt(" \\  _/(_", x-3, y-3, ConsoleColor.DarkRed);
+                        WriteAt("  \\ {\\\\", x-3, y-2, ConsoleColor.DarkRed);
+                        WriteAt("   \\-´(", x-3, y-1, ConsoleColor.DarkRed);
+                        WriteAt("    /__\\", x-3, y, ConsoleColor.DarkRed);
                         break;
                     case 12:
-                        WriteAt("©´,  ,", x, y, ConsoleColor.DarkRed);
-                        WriteAt("\\  _/(_", x, y, ConsoleColor.DarkRed);
-                        WriteAt("\\ {\\\\", x, y, ConsoleColor.DarkRed);
-                        WriteAt("\\`¯(", x, y, ConsoleColor.DarkRed);
-                        WriteAt("/__\\", x, y, ConsoleColor.DarkRed);
+                        WriteAt("© ´,   ,", x-3, y-4, ConsoleColor.DarkRed);
+                        WriteAt(" \\  _/(_", x-3, y-3, ConsoleColor.DarkRed);
+                        WriteAt("  \\ {\\\\", x-3, y-2, ConsoleColor.DarkRed);
+                        WriteAt("   \\`¯(", x-3, y-1, ConsoleColor.DarkRed);
+                        WriteAt("    /__\\", x-3, y, ConsoleColor.DarkRed);
                         break;
                     case 13:
-                        WriteAt("©  _/(_", x, y, ConsoleColor.DarkRed);
-                        WriteAt("\\ {\\\\", x, y, ConsoleColor.DarkRed);
-                        WriteAt("\\_/(", x, y, ConsoleColor.DarkRed);
-                        WriteAt("\\__\\", x, y, ConsoleColor.DarkRed);
+                        WriteAt("      ,", x-3, y-4, ConsoleColor.DarkRed);
+                        WriteAt("©   _/(_", x-3, y-3, ConsoleColor.DarkRed);
+                        WriteAt(" \\ {\\\\", x-3, y-2, ConsoleColor.DarkRed);
+                        WriteAt("  \\_/(", x-3, y-1, ConsoleColor.DarkRed);
+                        WriteAt("   \\__\\", x-3, y, ConsoleColor.DarkRed);
                         break;
                     default:
                         EnemigoBase(monstruo,x,y);

@@ -4,7 +4,7 @@ using System.Dynamic;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks.Dataflow;
-
+using Ganadores;
 internal class Program
 {
     static async Task Main(string[] args)
@@ -19,6 +19,7 @@ internal class Program
 
         while (!salir)
         {
+            Console.Clear();
             Mostrar.Logo();
             Mostrar.WriteAt("1.Jugar", 40, 9, ConsoleColor.White);
             Mostrar.WriteAt("2.Historial", 40, 11, ConsoleColor.White);
@@ -92,6 +93,8 @@ internal class Program
                             await Task.Delay(30);
                         }
                         await Task.Delay(2000);
+                        Console.Clear();
+
                     }
                     else
                     {
@@ -106,13 +109,20 @@ internal class Program
                         Console.Clear();
                         Mostrar.WriteAt("FIN", 50, 10, ConsoleColor.White);
                         await Task.Delay(2000);
+
+                        Ganador ganadorPartida = new Ganador
+                        {
+                            Nombre = Jugador.nombre,
+                            Fecha = DateTime.Now,
+                        };
+                        HistorialDeGanadores.GuardarGanador(ganadorPartida);  
                         Console.Clear();
                     }
 
 
                     break;
                 case 2:
-                    salir = true;
+                     HistorialDeGanadores.MostrarHistorial(); 
                     break;
                 case 3:
                     salir = true;
