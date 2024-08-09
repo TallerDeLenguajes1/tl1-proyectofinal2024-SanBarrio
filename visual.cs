@@ -56,27 +56,27 @@ public static class Mostrar
     public static void SeleccionPuerta()
     {
         Console.Clear();
-        Mostrar.PuertaCerrada(10, 4, ConsoleColor.DarkGreen);
-        Mostrar.WriteAt("Puerta 1", 13, 12, ConsoleColor.DarkGreen);
-        Mostrar.PuertaCerrada(30, 4, ConsoleColor.DarkBlue);
-        Mostrar.WriteAt("Puerta 2", 33, 12, ConsoleColor.DarkBlue);
-        Mostrar.PuertaCerrada(50, 4, ConsoleColor.DarkRed);
-        Mostrar.WriteAt("Puerta 3", 53, 12, ConsoleColor.DarkRed);
+        Mostrar.PuertaCerrada(20, 4, ConsoleColor.DarkGreen);
+        Mostrar.WriteAt("Puerta 1", 23, 12, ConsoleColor.DarkGreen);
+        Mostrar.PuertaCerrada(40, 4, ConsoleColor.DarkBlue);
+        Mostrar.WriteAt("Puerta 2", 43, 12, ConsoleColor.DarkBlue);
+        Mostrar.PuertaCerrada(60, 4, ConsoleColor.DarkRed);
+        Mostrar.WriteAt("Puerta 3", 63, 12, ConsoleColor.DarkRed);
 
 
-        Mostrar.WriteAt("Escoja una puerta: ", 30, 14, ConsoleColor.Red);
+        Mostrar.WriteAt("Escoja una puerta: ", 35, 14, ConsoleColor.Red);
         int i;
         int.TryParse(Console.ReadLine(), out i);
         switch (i)
         {
             case 1:
-                Mostrar.PuertaAbierta(10, 4, ConsoleColor.DarkGreen);
+                Mostrar.PuertaAbierta(20, 4, ConsoleColor.DarkGreen);
                 break;
             case 2:
-                Mostrar.PuertaAbierta(30, 4, ConsoleColor.DarkBlue);
+                Mostrar.PuertaAbierta(40, 4, ConsoleColor.DarkBlue);
                 break;
             case 3:
-                Mostrar.PuertaAbierta(50, 4, ConsoleColor.DarkRed);
+                Mostrar.PuertaAbierta(60, 4, ConsoleColor.DarkRed);
                 break;
         }
 
@@ -85,21 +85,21 @@ public static class Mostrar
     public static void Perdedor()
     {
         Console.Clear();
-        Mostrar.WriteAt("█      █████  █████  █████ █████", 20, 12, ConsoleColor.Red);
-        Mostrar.WriteAt("█      █   █  █      █     █   █", 20, 13, ConsoleColor.Red);
-        Mostrar.WriteAt("█      █   █  █████  ████  ████  ", 20, 14, ConsoleColor.Red);
-        Mostrar.WriteAt("█      █   █      █  █     █   █", 20, 15, ConsoleColor.Red);
-        Mostrar.WriteAt("█████  █████  █████  █████ █   █", 20, 16, ConsoleColor.Red);
+        Mostrar.WriteAt("█      █████  █████  █████ █████", 40, 9, ConsoleColor.Red);
+        Mostrar.WriteAt("█      █   █  █      █     █   █", 40, 10, ConsoleColor.Red);
+        Mostrar.WriteAt("█      █   █  █████  ████  ████  ", 40, 11, ConsoleColor.Red);
+        Mostrar.WriteAt("█      █   █      █  █     █   █", 40, 12, ConsoleColor.Red);
+        Mostrar.WriteAt("█████  █████  █████  █████ █   █", 40, 13, ConsoleColor.Red);
     }
 
     public static void Ganador()
     {
         Console.Clear();
-        Mostrar.WriteAt("█████  █████  █   █  █████  █████  █████  █████", 20, 12, ConsoleColor.Green);
-        Mostrar.WriteAt("█      █   █  ██  █  █   █  █        █    █", 20, 13, ConsoleColor.Green);
-        Mostrar.WriteAt("█ ███  █████  █████  █████  █████    █    ████", 20, 14, ConsoleColor.Green);
-        Mostrar.WriteAt("█   █  █   █  █  ██  █   █      █    █    █", 20, 15, ConsoleColor.Green);
-        Mostrar.WriteAt("█████  █   █  █   █  █   █  █████    █    █████", 20, 16, ConsoleColor.Green);
+        Mostrar.WriteAt("█████  █████  █   █  █████  █████  █████  █████", 30, 9, ConsoleColor.Green);
+        Mostrar.WriteAt("█      █   █  ██  █  █   █  █        █    █", 30, 10, ConsoleColor.Green);
+        Mostrar.WriteAt("█ ███  █████  █████  █████  █████    █    ████", 30, 11, ConsoleColor.Green);
+        Mostrar.WriteAt("█   █  █   █  █  ██  █   █      █    █    █", 30, 12, ConsoleColor.Green);
+        Mostrar.WriteAt("█████  █   █  █   █  █   █  █████    █    █████", 30, 13, ConsoleColor.Green);
     }
 
 
@@ -578,7 +578,7 @@ public static class Mostrar
 
             }
         }
-        else
+        else if(monstruo=="Lich")
         {
             for (int i = 1; i <= 10; i++)
             {
@@ -731,7 +731,7 @@ public static class Mostrar
         WriteAt("█████", x + 37, y + 3, ConsoleColor.DarkBlue);
         WriteAt("███", x + 38, y + 4, ConsoleColor.DarkBlue);
 
-        WriteAt("3. +3 de Armadura", x + 32, y + 7, ConsoleColor.DarkGreen);
+        WriteAt("3. +1 de Armadura", x + 32, y + 7, ConsoleColor.DarkGreen);
 
     }
     public static void RecompensaBatalla(int x, int y)
