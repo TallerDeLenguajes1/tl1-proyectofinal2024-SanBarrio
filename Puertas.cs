@@ -5,7 +5,7 @@ public class EleccionPuerta()
         Console.Clear();
         var seed = Environment.TickCount;
         var random = new Random(seed);
-        var value = random.Next(1, 3);;
+        var value = random.Next(0, 4);;
         if (value == 2)
         {
             //recompensa
@@ -50,9 +50,8 @@ public class EleccionPuerta()
 
             if (vida > 0)
             {
-                jugador.vida=vida;
                 Mostrar.RecompensaCofre(20, 6);
-                Mostrar.RecompensaBatalla(70, 6);
+                Mostrar.RecompensaBatalla(77, 6);
             Mostrar.WriteAt("Elije un numero para tu recompensa: ",30,15,ConsoleColor.DarkGreen);
 
                 int i;

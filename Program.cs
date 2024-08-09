@@ -19,9 +19,9 @@ internal class Program
 
         while (!salir)
         {
-            Mostrar.WriteAt("1.Jugar", 33, 9, ConsoleColor.White);
-            Mostrar.WriteAt("2.Salir", 33, 11, ConsoleColor.White);
-            Mostrar.WriteAt("Escoja un numero: ", 33, 14, ConsoleColor.Red);
+            Mostrar.WriteAt("1.Jugar", 40, 9, ConsoleColor.White);
+            Mostrar.WriteAt("2.Salir", 40, 11, ConsoleColor.White);
+            Mostrar.WriteAt("Escoja un numero: ", 35, 13, ConsoleColor.Red);
 
             int i;
             int.TryParse(Console.ReadLine(), out i);
