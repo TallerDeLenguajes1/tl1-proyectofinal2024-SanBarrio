@@ -2,26 +2,31 @@ public class EleccionPuerta()
 {
     public static async Task<ObtenerPersonaje.Players> EscogerProbabilidad(ObtenerPersonaje.Players jugador)
     {
-        Console.Clear();
         var seed = Environment.TickCount;
         var random = new Random(seed);
         var value = random.Next(1, 4); ;
+            int i;
          string Historia;
         if (value == 2)
         {
             //recompensa
+            Console.Clear();
             Console.ForegroundColor=ConsoleColor.Green;
             Historia = "Tuviste suerte esta vez... Obtienes una recompensa!:";
-            for (int k = 0; k < Historia.Length; k++)
+              for (int k = 0; k < Historia.Length; k++)
             {
                 Console.Write(Historia[k]);
                 await Task.Delay(30);
             }
                 await Task.Delay(700);
+            do{
+            Console.Clear();
             Mostrar.RecompensaCofre(35, 6);
             Mostrar.WriteAt("Elije un numero para tu recompensa: ", 39, 15, ConsoleColor.DarkGreen);
-            int i;
             int.TryParse(Console.ReadLine(), out i);
+            if(i==1 || i==2 || i==3)break;
+            }while(true);
+            
             switch (i)
             {
                 case 1:
@@ -54,7 +59,7 @@ public class EleccionPuerta()
                 enemigo = "swarm-of-insects";
             }
             Console.ForegroundColor=ConsoleColor.Red;
-
+            Console.Clear();
             Historia = "No tuviste suerte esta vez, te enfrentas contra.....¡"+enemigo+"!";
             for (int k = 0; k < Historia.Length; k++)
             {
@@ -70,13 +75,16 @@ public class EleccionPuerta()
                 Mostrar.Ganador();
                 Mostrar.WriteAt("Dado a tu desempeño la mazmorra desea darte una recompensa", 27, 15, ConsoleColor.Green);
                 await Task.Delay(2000);
+                do{
                 Console.Clear();
                 Mostrar.RecompensaCofre(20, 6);
                 Mostrar.RecompensaBatalla(77, 6);
                 Mostrar.WriteAt("Elije un numero para tu recompensa: ", 30, 15, ConsoleColor.DarkGreen);
-
-                int i;
                 int.TryParse(Console.ReadLine(), out i);
+                if(i==1 || i==2 || i==3 || i==4)break;
+                }while(true);
+               
+
                 switch (i)
                 {
                     case 1:

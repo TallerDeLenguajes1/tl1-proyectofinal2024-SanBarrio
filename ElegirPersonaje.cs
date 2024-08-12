@@ -18,7 +18,9 @@ public class ObtenerPersonaje
         jsonString = File.ReadAllText(fileName);
         Players Mago = JsonSerializer.Deserialize<Players>(jsonString);
 
-        Console.Clear();
+        int i;
+        do{
+            Console.Clear();
         Mostrar.WriteAt("----ELIGE TU PERSONAJE----", 30, 3, ConsoleColor.White);
         Mostrar.WriteAt("1. Nombre: " + Arquero.nombre, 11, 5, ConsoleColor.Green);
         Mostrar.WriteAt("Raza: " + Arquero.raza, 14, 6, ConsoleColor.White);
@@ -44,9 +46,15 @@ public class ObtenerPersonaje
         Mostrar.WriteAt("Fuerza: " + Mago.fuerza.ToString(), 28, 18, ConsoleColor.White);
         Mostrar.WriteAt("Armadura: " + Mago.defensa.ToString(), 28, 19, ConsoleColor.White);
 
-        Mostrar.WriteAt("Eliga el numero de su personaje: ", 33, 22, ConsoleColor.White);
-        int i;
+        Mostrar.WriteAt("Elija el numero de su personaje: ", 33, 22, ConsoleColor.White);
         int.TryParse(Console.ReadLine(), out i);
+        if(i==1 || i==2 || i==3)break;
+        }while(true);
+
+        
+        
+       
+
         Players JugadorSeleccionado = new Players();
         switch(i){
             case 1:

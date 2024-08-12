@@ -92,6 +92,7 @@ internal class Program
                             Console.Write(Historia[k]);
                             await Task.Delay(30);
                         }
+                        Mostrar.Perdedor();
                         await Task.Delay(2000);
                         Console.Clear();
 
@@ -107,7 +108,7 @@ internal class Program
                         }
                         await Task.Delay(2000);
                         Console.Clear();
-                        Mostrar.WriteAt("FIN", 50, 10, ConsoleColor.White);
+                        Mostrar.Ganador();
                         await Task.Delay(2000);
 
                         Ganador ganadorPartida = new Ganador
