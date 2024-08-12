@@ -9,7 +9,7 @@
 
 **Sala buena:** Contiene un cofre con una recompensa, dicha recompesa es mejorar alguna estadistica (vida, fuerza, armadura).
 
-**Sala mala:** Contiene una batalla contra un enemigo aleatorio, al finalizar dicho combate el aventurero recibe una recompensa parecida a la del cofre, pero con una opcion mas (curarse por completo). Las dificultades para cada enemigo son:
+**Sala mala:** Contiene una batalla contra un enemigo aleatorio, los enemigos son traidos por la api [D&D 5](https://5e-bits.github.io/docs/api), que busca al enemigo por su nombre y trae con el (su nombre, su fuerza y su vida), los valores de fuerza y vida son modificados multiplicandolos x2 o x3, para una pelea mas equilibrada, el daño realizado por el enemigo es la division+1 de su fuerza/armadura del aventuro, al finalizar dicho combate el aventurero recibe una recompensa parecida a la del cofre, pero con una opcion mas (curarse por completo). Las dificultades para cada enemigo son:
 
 **Ejambre de insectos:** Dificultad (Baja). 
 
